@@ -4,8 +4,8 @@ Piecewise linear regression with breakpoint prediction models to calculate soil 
 
     First, it imports the necessary modules (libraries): OpenCV (cv2) to process images, urllib.request to retrieve an image from a URL, numpy for working with arrays and serial for serial communication with Arduino.
     It then retrieves an image from a URL and stores it as a numpy array. OpenCV's cv2.imdecode() function is used to decode the image into a format that can be processed by OpenCV.
-    It then creates two binary masks for two regions of interest in the image (namely the young leaf regions only, the points of the polygons are set manually in a pre-calibration), using cv2.fillConvexPoly() to draw polygons (irregular quadrilaterals) around each region (Figure 9).
-    The program then uses cv2.bitwise_and() to apply the masks to the image, resulting in a masked image that shows only the two regions of interest (Figure 9).
+    It then creates two binary masks for two regions of interest in the image (namely the young leaf regions only, the points of the polygons are set manually in a pre-calibration), using cv2.fillConvexPoly() to draw polygons (irregular quadrilaterals) around each region.
+    The program then uses cv2.bitwise_and() to apply the masks to the image, resulting in a masked image that shows only the two regions of interest.
     A scaling factor is then calculated to resize the masked image, preparing it for the next step, rendering it to the screen, so that it is 1080 pixels tall, the normal resolution height of a modern monitor. Resizing the masked image is done using the cv2.resize() function.
     The program displays the resized masked image using cv2.imshow(), waits for a key to be pressed using cv2.waitKey(), and writes the masked image locally using the cv2.imwrite() function.
     It then calculates the number of non-zero pixels (just for information) in each mask using cv2.countNonZero() and the mean RGB color values for each region using cv2.mean().
