@@ -51,7 +51,7 @@ if Gmean1 > Gbp:
 
 else:
     sm1 = ((Gmean1 - 137.12 - 2.566448 * 19.03) / -2.593588)
-    sm1 *= 1,166  # increase sm2 by 6% error x 1,1 (soil coeficient)
+    sm1 *= 1.166  # increase sm2 by 6% error x 1,1 (soil coeficient)
 
 # Calculate sm2 based on its value
 if Gmean2 > Gbp:
