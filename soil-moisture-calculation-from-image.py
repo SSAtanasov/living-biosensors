@@ -73,7 +73,7 @@ if sm1 < 20:
     print(f"  Irrigation started in Row 1")
     # Send the SMS to the Arduino
     ser.write(b'Start irrigation in Row 1')
-elif sm1 >= 20 and sm1 <= 29:
+elif sm1 >= 20 and sm1 <= 31:
     print(f"  Soil moisture is sufficient in Row 1. Irrigation not started.")
 else:
     print(f"  Irrigation stopped in Row 1")
@@ -90,7 +90,7 @@ if sm2 < 20:
     print(f"  Irrigation started in Row 2")
     # Send the SMS to the Arduino
     ser.write(b'Start irrigation in Row 2')
-elif sm2 >= 20 and sm2 <= 29:
+elif sm2 >= 20 and sm2 <= 31:
     print(f"  Soil moisture is sufficient in Row 2. Irrigation not started.")
 else:
     print(f"  Irrigation stopped in Row 2")
