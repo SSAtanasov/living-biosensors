@@ -22,6 +22,5 @@ Required libraries:
     serial
 
 
-Author
-
-Svetoslav Atanasov
+Author: Svetoslav Atanasov 
+e-mail: svetoslav.atanasov@trakia-uni.bg
